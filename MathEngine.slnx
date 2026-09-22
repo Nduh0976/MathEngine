@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/MathEngine.Cli/MathEngine.Cli.csproj" />
+    <Project Path="src/MathEngine/MathEngine.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/MathEngine.Tests/MathEngine.Tests.csproj" />
+  </Folder>
+</Solution>
