@@ -52,12 +52,13 @@ public sealed class Lexer
         return currentChar switch
         {
             '+' => new Token(TokenType.Plus, "+", 0d, start),
-            '-' => new Token(TokenType.Minus, "+", 0d, start),
-            '*' => new Token(TokenType.Star, "+", 0d, start),
-            '/' => new Token(TokenType.Slash, "+", 0d, start),
-            '(' => new Token(TokenType.LParen, "+", 0d, start),
-            ')' => new Token(TokenType.RParen, "+", 0d, start),
-            ',' => new Token(TokenType.Comma, "+", 0d, start),
+            '-' => new Token(TokenType.Minus, "-", 0d, start),
+            '*' => new Token(TokenType.Star, "*", 0d, start),
+            '/' => new Token(TokenType.Slash, "/", 0d, start),
+            '^' => new Token(TokenType.Caret, "^", 0d, start),
+            '(' => new Token(TokenType.LParen, "(", 0d, start),
+            ')' => new Token(TokenType.RParen, ")", 0d, start),
+            ',' => new Token(TokenType.Comma, ",", 0d, start),
             _ => throw new ParseException($"Unexpected character '{currentChar}'", start)
         };
     }
