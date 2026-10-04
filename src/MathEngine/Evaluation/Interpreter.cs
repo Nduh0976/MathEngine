@@ -54,6 +54,6 @@ public sealed class Interpreter
             args[i] = Evaluate(call.Arguments[i], variables);
         }
 
-        return definition.Evalaute(args);
+        return definition.Evaluate(args);
     }
 }

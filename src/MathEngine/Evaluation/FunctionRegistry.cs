@@ -103,7 +103,7 @@ public sealed class FunctionRegistry
         => Register(new FunctionDefinition(
             Name: name,
             Arity: 1,
-            Evalaute: args => evaluate(args[0]),
+            Evaluate: args => evaluate(args[0]),
             CrlMethod: null,
             PartialDerivative: (args, _) => derivative(args[0])));
 
@@ -119,7 +119,7 @@ public sealed class FunctionRegistry
         Register(new FunctionDefinition(
             Name: Name,
             Arity: 1,
-            Evalaute: args => evaluate(args[0]),
+            Evaluate: args => evaluate(args[0]),
             CrlMethod: method,
             PartialDerivative: (args, _) => derivative(args[0])));
     }
